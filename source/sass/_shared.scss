@@ -1,0 +1,226 @@
+
+// ================
+// CSS Shared by multiple templates
+// ================
+
+
+// ============================================================
+// General
+
+body, .body-table {
+  // background-color: $c-placeholder;
+}
+
+$d-sidePadding: 20px;
+$d-sidePaddingSmall: 10px;
+
+// padding for button and major areas
+.container{
+  padding: 10px $d-sidePadding 0;
+
+  @media screen and (max-width: $mq-small) {
+    padding-right: $d-sidePaddingSmall !important;
+    padding-left: $d-sidePaddingSmall !important;
+  }
+}
+
+
+// ============================================================
+// Header
+
+.header{
+  // background: $c-placeholder;
+}
+
+// ============================================================
+// Logo
+
+$d-logoWidth:130px;
+$d-logoHeight:50px; // If the logo is on an outlook background it also needs to have a height attribute seperately declared inline. ex. height="50".
+
+.logo-td{
+  padding-bottom:10px;
+
+  img{
+    display:inline-block;
+    vertical-align:top;
+    width: $d-logoWidth;
+    height: $d-logoHeight;
+  }
+
+  //logo size on small screens
+  @media (max-width: $mq-tiny){
+    img{
+      width: $d-logoWidth/1.25 !important;
+      height: auto !important;
+    }
+  }
+}
+
+// ============================================================
+// Contact Info Section
+
+.contact-section-table{
+  // background: $c-placeholder;
+
+  .col2{
+    width:170px + $d-sidePadding; // using extra width in place of padding to allow for some layout flexibility
+  }
+
+  .container{
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+
+  .contact-info-table{
+    table{
+      border-bottom:0px $c-placeholder solid; //needed to prevent mso 120dpi phantom border, change color as needed. 
+    }
+  }
+
+  .contact-copy-td{
+    p{
+      margin-bottom:0;
+    }
+  }
+
+  .phone-td,
+  .email-td{
+    padding:5px 0;
+    // background: $c-placeholder;
+
+    table,
+    td{
+      vertical-align:middle;
+    }
+
+    .icon-td{
+      padding-right:5px;
+    }
+
+    //icon
+    img {
+      display: inline-block !important;
+      vertical-align: middle;
+      height: 30px;
+      max-height: 30px; // max-height for client compatibility
+      width: 30px;
+    }
+
+    .body-type{
+      line-height:100% !important; // allows text to be centered with icon in Outlook.. 
+    }
+
+    a, a:link{
+      color: $c-bodyType !important;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+  }
+
+  @media (max-width: $mq-small) {
+    .col1{
+      width:60% !important;
+    }
+    .col2{
+      width:30% !important;
+    }
+  }
+
+  @media (max-width: 600px){
+
+    .col1, .col2{
+      display: block !important;
+      width: 100% !important;
+    }
+
+    .contact-info-table {
+      margin:auto !important;
+      width:100% !important;
+    }
+
+    .contact-info-tr {
+      display:inline-block !important;
+      width:50% !important;
+    }
+
+    .contact-info-td{
+      padding-top:10px !important;
+    }
+
+    .phone-td,
+    .email-td{
+      padding:0 $d-sidePaddingSmall 0 0 !important; //right padding needed for pixel client
+    }
+  }
+
+  @media (max-width: 420px){
+
+    .contact-info-tr{
+      display:block !important;
+      width:100% !important;
+    }
+
+    .phone-td,
+    .email-td{
+      padding:$d-sidePaddingSmall $d-sidePaddingSmall $d-sidePaddingSmall 0!important;
+    }
+  }
+}
+
+// ============================================================
+// Footer
+
+.footer-table{
+  // background-color: $c-placeholder;
+
+  .footer-td{
+    padding-top:20px;
+    padding-bottom:10px;
+    color: $c-footerType !important;
+    text-align:left;
+  }
+
+  & a, & a:link{
+    color: $c-footerType !important;
+    text-decoration:none !important;
+
+    &:hover,
+    &:focus {
+      color: $c-footerType !important;
+      text-decoration: none !important;
+      background: none !important;
+    }
+  }
+}
+
+// ============================================================
+// Opt Out
+
+.opt-out-table{
+  // background-color: $c-placeholder;
+}
+
+.opt-out-td{
+  padding-bottom:10px;
+  color: $c-OptOutType;
+  font-size:13px;
+  font-family:$f-body;
+  text-align:left;
+
+  p{
+    margin:0;
+  }
+
+  & a, & a:link{
+    color: $c-OptOutType !important;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: darken($c-OptOutType, 8%) !important;
+      text-decoration: none !important;
+      background: none !important;
+    }
+  }
+}

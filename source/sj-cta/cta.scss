@@ -1,0 +1,197 @@
+
+@import "../sass/vendor/_eab.scss";
+@import "../sass/_settings";
+@import "../sass/_type";
+@import "../sass/vendor/_global.scss";
+@import "../sass/_shared.scss";
+@import "../sass/_buttons.scss";
+@import "../sass/_modules.scss";
+@import "../sass/vendor/_helper.scss";
+ 
+
+// ============================================================
+// Hero with Logo and Background (both full and defined width)
+// ============================================================
+
+// Note: If you keep the logo in this layout you will need to define the a height attribute on the <img> in the logo partial manually. Outlook 2013 cuts off half the image otherwise.
+
+.hero-background-img{
+	// background: $c-placeholder;
+
+	.hero-headline-td{
+		padding-top:40px;
+		text-align:center;
+	}
+
+	.hero-subtitle-td{
+
+	}
+}
+
+// ============================================================
+// Hero Section with Side Image (Bottom on mobile)
+// ============================================================
+
+// Background:
+// background styles need to be defined inline because of Marketo variables.
+// define on hero-td class and the IE fix below it.
+// make sure to replace with original marketo variable after testing. ${heroBackgroundImage}
+
+.hero-side-img{
+	// background: $c-placeholder;
+
+	.hero-content-td{
+		width: 400px;
+
+		> table{
+			display:block;
+		}
+	}
+
+	.hero-img-td{
+		width: 240px;
+	}
+	
+	.hero-headline-td{
+		padding-top:30px;
+		text-align:left;
+	}
+
+	.hero-subtitle-td{
+		text-align:left;
+	}
+
+	.hero-mob-img {
+		display: none;
+	}
+
+	@media (max-width: 640px) {
+		.col1{
+			width:60% !important;
+		}
+		.col2{
+			width:30% !important;
+		}
+	}
+
+	@media (max-width: 550px){
+		.col1, .col2{
+		    display: table !important;
+		    width: 100% !important;
+		}
+
+		.col2{
+			// height:200px;
+			background: none !important;
+		}
+
+		.hero-mob-img {
+			display: block !important;
+			height: 200px;
+		}
+	}
+}
+
+// ============================================================
+// Hero Section with Banner Image
+// ============================================================
+
+// Background:
+// background styles need to be defined inline because of Marketo variables.
+// define on hero-td class and the IE fix below it.
+// make sure to replace with original marketo variable after testing. ${heroBackgroundImage}
+
+.hero-banner-img{
+	// background-color: $c-placeholder;
+
+	.hero-headline-td{
+		padding-top: 40px;
+	}
+
+	.hero-img-td img{
+		width: $mq-small;
+		max-width: 100%;
+		height: auto; 
+	}
+}
+
+// ============================================================
+// Hero With Background Image Behind Title
+// ============================================================
+
+$c-heroContainer: white;
+
+// Title and Image Table
+// extra borders below are necessary for client compatibility
+
+.hero-title-background {
+
+	.wrapper {
+		border-bottom: 0px $c-heroContainer solid;
+	}
+
+	.hero-td {
+		padding-top: 200px;
+	}
+
+	.hero-content-table {
+		background: $c-heroContainer;
+		border-bottom: 0px $c-heroContainer solid;
+	}
+
+	.hero-headline-td{
+		padding-bottom: 5px;
+		text-align:center;
+	}
+
+	@media(max-width: $mq-tiny) {
+		.hero-headline-td{
+			text-align: left !important;
+		}
+
+		.hero-td {
+			padding-top: 150px !important;
+		}
+	}
+}
+
+// Copy Table
+
+.hero-copy{
+
+	.wrapper {
+		background-color: $c-heroContainer;
+		border-top: 0px solid $c-heroContainer;
+	}
+
+	.hero-content-table {
+		border-top: 0px solid $c-heroContainer;
+	}
+}
+
+
+// ============================================================
+// Free Text Section
+// ============================================================
+
+.free-modules{
+	// background: $c-placeholder;
+}
+
+.free-text-table{
+	// background: $c-placeholder;
+
+	.module{
+		padding:10px 0;
+	}
+
+	.free-title-td{
+		text-align:left;
+	}
+
+	.free-copy-td{
+		text-align:left;
+	}
+}
+
+

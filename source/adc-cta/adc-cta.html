@@ -1,0 +1,123 @@
+<include src="../_partials/_page-header-adc.html" stylesheet="adc-cta.css"></include>
+
+ <!-- 
+  USAGE NOTES:
+  - Components are written modularly to stand on their own.
+  - Each component has companion SCSS found in the companion scss file
+  - More information can be found here: https://wiki.eab.com/display/ALR/ALR+Gulp
+
+  BACKGROUND IMAGES:
+  - Backgrounds must still be declared inline due to the marketo variable. 
+  -->
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Header -->
+<!-- ============================================================================================================= -->
+
+<include src="../_partials/_header.html"></include>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Any Hero section from the CTA template can be used here-->
+<!-- ============================================================================================================= -->
+
+
+<table class="hero-banner-img full-width" id="hero" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td>
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td class="hero-td">              
+                <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="hero-headline-td container headline-type">
+                        <div class="mktoText" mktoname="Hero Title" id="hero_title">
+                          <p>Hero with Banner Image</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="hero-img-td container" valign="top" align="right">
+                          <div class="mktoImg" mktoname="Hero Banner Image" id="hero_banner_img" mktolockimgstyle="false">
+                            <img src="http://www.rutgers-u.org/exceed/a/img/banner-offcampus-sm.jpg?1538063248" alt="">
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="hero-subtitle-td container body-type">
+                        <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_subtitle">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <include src="../_partials/_button.html"></include>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- ============================================================================================================= -->
+<!-- Contact Info Section -->
+<!-- ============================================================================================================= -->
+
+<include src="../_partials/_contact-info.html"></include>
+
+<!-- ============================================================================================================= -->
+<!-- Bottom Apply Section -->
+<!-- ============================================================================================================= -->
+
+<table class="apply-btm-table full-width" id="button_only" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td class="apply-btm-td">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td class="apply-btm-wrapper-td container">              
+                <table class="apply-btm-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="apply-btm-headline-td headline-type col1" align="left">
+                        <div class="mktoText" mktoname="Apply" id="apply_btm_title">
+                          <p>CTA Bottom Apply Section CTA Bottom.</p>
+                        </div>
+                      </td>
+                      <td class="col2 apply-btm-button-td" align="right">
+                        <table class="apply-btm-button-table">
+                          <tbody>
+                            <tr>
+                              <include src="../_partials/_button-minor.html"></include>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<include src="../_partials/_page-footer.html"></include>

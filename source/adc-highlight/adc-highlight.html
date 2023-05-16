@@ -1,0 +1,255 @@
+<include src="../_partials/_page-header-adc.html" stylesheet="adc-highlight.css"></include>
+
+ <!-- 
+  USAGE NOTES:
+  - Components are written modularly to stand on their own.
+  - Each component has companion SCSS found in the companion scss file
+  - More information can be found here: https://wiki.eab.com/display/ALR/ALR+Gulp
+
+  BACKGROUND IMAGES:
+  - Backgrounds must still be declared inline due to the marketo variable. 
+  -->
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Header -->
+<!-- ============================================================================================================= -->
+
+<include src="../_partials/_header.html"></include>
+
+
+<!-- mktoContainer wrapping table - DO NOT DELETE -->
+<table class="hero-modules-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td class="mktoContainer" id="template-wrapper">
+
+
+        <!-- ============================================================================================================= -->
+        <!-- Hero Banner Image Module --> 
+        <!-- ============================================================================================================= -->
+
+
+        <table class="hero-banner full-width mktoModule" id="hero_banner" mktoname="Hero Banner Module" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td>
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="hero-td">              
+                        <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td class="hero-headline-td container headline-type">
+                                <div class="mktoText" mktoname="Hero Title" id="hero_banner_title">
+                                  <p>Hero with Banner Image</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="hero-img-td container" valign="top" align="right">
+                                  <div class="mktoImg" mktoname="Hero Banner Image" id="hero_banner_img" mktolockimgstyle="false" mktoImgLink="https://{{my.CTALink-Inquiry}}{{my.Email-Tracking}}{{my.CommType}}">
+                                    <a><img src="http://www.rutgers-u.org/exceed/a/img/banner-offcampus-sm.jpg?1538063248" alt=""></a>
+                                  </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="hero-subtitle-td container body-type">
+                                <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_banner_subtitle">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- ============================================================================================================= -->
+        <!-- Hero Portrait Module (Bottom on mobile) -->
+        <!-- ============================================================================================================= -->
+
+        <table class="hero-portrait full-width mktoModule" id="hero_portrait" mktoname="Hero Portrait Module" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td class="hero-portrait-td">
+                <table class="wrapper" id="hero" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="hero-headline-td container headline-type" colspan="2">
+                        <div class="mktoText" mktoname="Hero Title" id="hero_portrait_title">
+                          <p>Hero Portrait Module (Bottom on mobile)</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="hero-subtitle-td col1 container body-type" align="left">
+                        <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_portrait_subtitle">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                        </div>
+                      </td>
+                        <td class="potrait-img-td col2 container" valign="top" align="right">
+                          <div class="mktoImg" mktoname="Portrait Image" id="hero_portrait_img" mktolockimgstyle="false" mktoImgLink="">
+                            <a><img class="portrait-img-lg" src="https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/full/!440,400/0/default.jpg"/></a>
+                          </div>
+                        </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <!-- Mobile Image -->
+
+                <!--[if !mso]><\!-->                                 
+                  <div class="mktoImg" mktoname="Mobile Portrait Image" id="hero_portrait_img_mob" mktolockimgstyle="false" mktoImgLink="">
+                    <a><img class="portrait-img-mob" src="https://www.infoplease.com/sites/infoplease.com/files/inline-images/mount_everest_650.jpg"/></a>
+                  </div>
+                <!-- <![endif] -->
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- ============================================================================================================= -->
+        <!-- Hero Portrait Module (similar to newsletter) -->
+        <!-- ============================================================================================================= -->
+
+        <table class="hero-portrait-alt full-width mktoModule" id="hero_portrait_alt" align="center" cellspacing="0" cellpadding="0" border="0" mktoname="Hero Portrait Module" role="presentation">
+          <tbody>
+            <tr>
+              <td class="hero-portrait-td" valign="top">
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="hero-portrait-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table class="hero-portrait-table-img" align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td valign="top" class="portrait-img-td container">
+                                        <div class="mktoImg" mktoname="Portrait Image" id="hero_portrait_img" mktolockimgstyle="false" mktoImgLink="">
+                                          <a><img class="portrait-img-lg" src="https://media.nga.gov/iiif/public/objects/1/0/6/3/8/2/106382-primary-0-nativeres.ptif/full/!440,400/0/default.jpg"/></a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+  
+                                <table class="hero-portrait-table-copy" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td class="hero-headline-td container headline-type">
+                                        <div class="mktoText" mktoname="News Item Title" id="news_photo_right_title">
+                                          <p>Hero Portrait Module</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="hero-subtitle-td container body-type">
+                                        <div class="mktoText" mktoname="News Item Text" id="news_photo_right_text">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus.</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <!-- End portrait module -->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- End mktoContainer wrapping table -->
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Double CTA Section -->
+<!-- ============================================================================================================= -->
+
+<table class="dbl-cta-table full-width" id="button_only" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td class="dbl-cta-td">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td class="dbl-cta-wrapper-td">              
+                <table class="dbl-cta-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="dbl-cta-headline-td sub-headline-type container" align="left">
+                        <div class="mktoText" mktoname="Double CTA Title" id="dbl_cta_title">
+                          <p>Double CTA Title</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td class="learn-td sub-headline-type container col1" align="right">
+                                <a href="${ctaLink}">
+                                  ${ctaLinkText}
+                                </a>
+                              </td>
+                              <td nowrap class="divider-td col2 body-type" align="center">
+                                -&nbsp;or&nbsp;-
+                              </td>
+                              <td class="apply-td sub-headline-type container col3" align="left">
+                                <a href="${minorCtaLink}">
+                                  ${minorCtaLinkText}
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- ============================================================================================================= -->
+<!-- Contact Info Section -->
+<!-- ============================================================================================================= -->
+
+<include src="../_partials/_contact-info.html"></include>
+
+
+
+<include src="../_partials/_page-footer.html"></include>

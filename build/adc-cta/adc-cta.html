@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+
+	<!-- Marketo Variable Definitions (define by changing default value, or within Marketo interface) -->
+	<!-- Extra variables below can be uncommented to use as needed. -->
+
+<!-- 	<meta class="mktoImg" id="heroBackgroundImage" mktoname="Hero Background Image" default="http://www.independentmediators.co.uk/wp-content/uploads/2016/02/placeholder-image.jpg" mktomodulescope="false" /> -->
+	<meta class="mktoString" id="ctaLinkText" mktoname="Inquiry Link Text" default="Learn More" mktomodulescope="false">
+	<meta class="mktoString" id="ctaLink" mktoname="Inquiry Link" default="https://{{my.CTALink-Inquiry}}{{my.Email-Tracking}}{{my.CommType}}" mktomodulescope="false">
+	<meta class="mktoString" id="minorCtaLinkText" mktoname="Apply Link Text" default="Apply&nbsp;Now" mktomodulescope="false">
+	<meta class="mktoString" id="minorCtaLink" mktoname="Apply Link" default="https://{{my.CTALink-Apply}}{{my.Email-Tracking}}{{my.CommType}}" mktomodulescope="false">
+	<meta class="mktoString" id="emailLinkText" mktoname="Contact Email Link Text" default="Send Us An Email" mktomodulescope="false">
+
+	<!--[if gte mso 9]><xml>
+	<o:OfficeDocumentSettings>
+	<o:AllowPNG/>
+	<o:PixelsPerInch>96</o:PixelsPerInch>
+	</o:OfficeDocumentSettings>
+	</xml><![endif]-->
+
+	<!-- Other Meta Tags -->
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="robots" content="noindex,nofollow">
+	<meta content="telephone=no" name="format-detection">
+	<meta http-equiv="Content-Language" content="en-us">
+	<style>.headline-type { font-size: 26px; line-height: 31.2px; font-family: Georgia, serif; }
+
+.headline-type p { margin: 0; }
+
+.sub-headline-type { font-weight: bold; font-size: 20px; line-height: 24px; font-family: Georgia, serif; }
+
+.sub-headline-type p { margin: 0; }
+
+.body-type { color: #222; font-size: 16px; line-height: 24px; font-family: Arial, sans-serif; }
+
+.body-type p { margin-top: 0; margin-bottom: 10px; }
+
+@media screen and (max-width: 480px) { .headline-type { font-size: 22px !important; line-height: 26.4px !important; }
+  .sub-headline-type { font-size: 18px !important; line-height: 21.6px !important; }
+  .body-type { font-size: 15px !important; line-height: 22.5px !important; } }
+
+p a, li a, p a:link, li a:link { color: #00f; text-decoration: underline; transition: all 0.25s ease-in-out; }
+
+p a:hover, p a:focus, li a:hover, li a:focus, p a:link:hover, p a:link:focus, li a:link:hover, li a:link:focus { color: #0000b3 !important; text-decoration: none !important; }
+
+body, .body-table { width: 100%; margin: 0; padding: 0; -webkit-text-size-adjust: 100%; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+.body-td { padding: 0; }
+
+a[x-apple-data-detectors] { color: inherit !important; font-weight: inherit !important; font-size: inherit !important; line-height: inherit !important; font-family: inherit !important; text-decoration: underline !important; }
+
+.full-width { width: 100%; }
+
+.wrapper { width: 640px; }
+
+table, td { border-collapse: collapse; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+
+table { border-spacing: 0; }
+
+td { -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; word-break: break-word; }
+
+img { display: block; height: auto; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; outline: none; line-height: 100%; text-decoration: none; -ms-interpolation-mode: bicubic; }
+
+@media (max-width: 640px) { .wrapper { width: 100% !important; }
+  .mob-hide { display: none !important; } }
+
+.container { padding: 10px 20px 0; }
+
+@media screen and (max-width: 640px) { .container { padding-right: 10px !important; padding-left: 10px !important; } }
+
+.logo-td { padding-bottom: 10px; }
+
+.logo-td img { display: inline-block; vertical-align: top; width: 130px; height: 50px; }
+
+@media (max-width: 480px) { .logo-td img { width: 104px !important; height: auto !important; } }
+
+.contact-section-table .col2 { width: 190px; }
+
+.contact-section-table .container { padding-top: 20px; padding-bottom: 20px; }
+
+.contact-section-table .contact-info-table table { border-bottom: 0px #ffffff solid; }
+
+.contact-section-table .contact-copy-td p { margin-bottom: 0; }
+
+.contact-section-table .phone-td, .contact-section-table .email-td { padding: 5px 0; }
+
+.contact-section-table .phone-td table, .contact-section-table .phone-td td, .contact-section-table .email-td table, .contact-section-table .email-td td { vertical-align: middle; }
+
+.contact-section-table .phone-td .icon-td, .contact-section-table .email-td .icon-td { padding-right: 5px; }
+
+.contact-section-table .phone-td img, .contact-section-table .email-td img { display: inline-block !important; vertical-align: middle; height: 30px; max-height: 30px; width: 30px; }
+
+.contact-section-table .phone-td .body-type, .contact-section-table .email-td .body-type { line-height: 100% !important; }
+
+.contact-section-table .phone-td a, .contact-section-table .phone-td a:link, .contact-section-table .email-td a, .contact-section-table .email-td a:link { color: #222 !important; text-decoration: none; white-space: nowrap; }
+
+@media (max-width: 640px) { .contact-section-table .col1 { width: 60% !important; }
+  .contact-section-table .col2 { width: 30% !important; } }
+
+@media (max-width: 600px) { .contact-section-table .col1, .contact-section-table .col2 { display: block !important; width: 100% !important; }
+  .contact-section-table .contact-info-table { margin: auto !important; width: 100% !important; }
+  .contact-section-table .contact-info-tr { display: inline-block !important; width: 50% !important; }
+  .contact-section-table .contact-info-td { padding-top: 10px !important; }
+  .contact-section-table .phone-td, .contact-section-table .email-td { padding: 0 10px 0 0 !important; } }
+
+@media (max-width: 420px) { .contact-section-table .contact-info-tr { display: block !important; width: 100% !important; }
+  .contact-section-table .phone-td, .contact-section-table .email-td { padding: 10px 10px 10px 0 !important; } }
+
+.footer-table .footer-td { padding-top: 20px; padding-bottom: 10px; color: #333 !important; text-align: left; }
+
+.footer-table a, .footer-table a:link { color: #333 !important; text-decoration: none !important; }
+
+.footer-table a:hover, .footer-table a:focus, .footer-table a:link:hover, .footer-table a:link:focus { color: #333 !important; text-decoration: none !important; background: none !important; }
+
+.opt-out-td { padding-bottom: 10px; color: #333; font-size: 13px; font-family: Arial, sans-serif; text-align: left; }
+
+.opt-out-td p { margin: 0; }
+
+.opt-out-td a, .opt-out-td a:link { color: #333 !important; text-decoration: underline; }
+
+.opt-out-td a:hover, .opt-out-td a:focus, .opt-out-td a:link:hover, .opt-out-td a:link:focus { color: #1f1f1f !important; text-decoration: none !important; background: none !important; }
+
+.button-side-spacer { width: 20px; border: 0; }
+
+@media screen and (max-width: 640px) { .button-side-spacer { width: 10px !important; } }
+
+.cta-td { padding-top: 20px; padding-bottom: 40px; }
+
+.button-td, .button-td a { border-radius: 0; text-align: center; text-decoration: none; transition: all 0.25s ease-in-out; }
+
+.button-td a { display: inline-block; padding: 14px 36px; border-right: 0px; text-decoration: none; white-space: nowrap; }
+
+.button-td a .button-icon { display: inline-block !important; width: auto; height: 17px; max-height: 17px; text-decoration: none; vertical-align: baseline; }
+
+@media (max-width: 480px) { .button-wrapper-table, .button-table, .button-td, .button-td a { width: 100% !important; }
+  .button-td a { padding-right: 0 !important; padding-left: 0 !important; } }
+
+.major-cta, .major-cta a { background-color: #ff0000; }
+
+.major-cta:hover, .major-cta a:hover { background-color: #cc0000 !important; border-color: #cc0000 !important; }
+
+.major-cta a { padding: 14px 36px; border: 1px solid #ff0000; color: #ffffff; font-size: 26px; font-family: Georgia, serif; }
+
+@media (max-width: 480px) { .major-cta a { font-size: 22px !important; } }
+
+.minor-cta, .minor-cta a { background-color: #007eff; }
+
+.minor-cta:hover, .minor-cta a:hover { background-color: #0065cc !important; border-color: #0065cc !important; }
+
+.minor-cta a { padding: 10px 20px; border: 1px solid #007eff; color: #ffffff; font-size: 20px; font-family: Arial, sans-serif; }
+
+@media (max-width: 480px) { .minor-cta a { font-size: 18px !important; } }
+
+.visuallyhidden { display: none !important; visibility: hidden; opacity: 0; color: transparent; height: 0; width: 0; }
+
+.hero-banner-img .hero-headline-td { padding-top: 40px; padding-bottom: 10px; }
+
+.hero-banner-img .hero-img-td { padding-top: 0 !important; }
+
+.hero-banner-img .hero-img-td img { width: 600px; max-width: 100%; height: auto; }
+
+.apply-btm-table .col1 { padding-right: 20px; }
+
+.apply-btm-table .container { padding-top: 20px; padding-bottom: 20px; }
+
+.apply-btm-table .apply-btm-button-td .container { padding: 0 !important; }
+
+@media (max-width: 600px) { .apply-btm-table .apply-btm-wrapper-td { padding-bottom: 40px !important; }
+  .apply-btm-table .apply-btm-headline-td { padding-right: 0 !important; }
+  .apply-btm-table .col1, .apply-btm-table .col2 { display: block !important; width: 100% !important; }
+  .apply-btm-table .col2 > table { margin: auto; }
+  .apply-btm-table .apply-btm-button-td { padding-top: 20px; } }
+
+@media (max-width: 480px) { .apply-btm-table .apply-btm-content-table, .apply-btm-table .apply-btm-button-table { width: 100% !important; } }
+</style>
+
+</head>
+
+<body style="-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; margin: 0; padding: 0; width: 100%;">
+
+<!-- wraps entire body of email for clients that strip out the body tag  -->	
+<table class="body-table" align="center" role="presentation" style="-moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: 100%; border-collapse: collapse; border-spacing: 0; box-sizing: border-box; margin: 0; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; width: 100%;">
+	<tbody>
+		<tr>
+			<td class="body-td" align="center" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; word-break: break-word;">
+
+				<div class="mktoSnippet" id="alertBar" mktoname="Alert Bar" mktodefaultsnippetid="193"></div>
+
+ <!-- 
+  USAGE NOTES:
+  - Components are written modularly to stand on their own.
+  - Each component has companion SCSS found in the companion scss file
+  - More information can be found here: https://wiki.eab.com/display/ALR/ALR+Gulp
+
+  BACKGROUND IMAGES:
+  - Backgrounds must still be declared inline due to the marketo variable. 
+  -->
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Header -->
+<!-- ============================================================================================================= -->
+
+<table class="header full-width" id="secondary_CTA" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+  <tbody>
+    <tr>
+      <td valign="top" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 640px;" width="640">
+          <tbody>
+            <tr>
+              <td class="logo-td container" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-bottom: 10px; word-break: break-word;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/Eab_global_logo.png" alt="{{my.School-Name}}" style="-ms-interpolation-mode: bicubic; border-bottom-width: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; display: inline-block; height: 50px; line-height: 100%; outline: none; text-decoration: none; vertical-align: top; width: 130px;" width="130">
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Any Hero section from the CTA template can be used here-->
+<!-- ============================================================================================================= -->
+
+
+<table class="hero-banner-img full-width" id="hero" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+  <tbody>
+    <tr>
+      <td style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 640px;" width="640">
+          <tbody>
+            <tr>
+              <td class="hero-td" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">              
+                <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                  <tbody>
+                    <tr>
+                      <td class="hero-headline-td container headline-type" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; font-family: Georgia, serif; font-size: 26px; hyphens: none; line-height: 31.2px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-bottom: 10px; padding-top: 40px; word-break: break-word;">
+                        <div class="mktoText" mktoname="Hero Title" id="hero_title">
+                          <p style="margin: 0;">Hero with Banner Image</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="hero-img-td container" valign="top" align="right" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-top: 0; word-break: break-word;">
+                          <div class="mktoImg" mktoname="Hero Banner Image" id="hero_banner_img" mktolockimgstyle="false">
+                            <img src="http://www.rutgers-u.org/exceed/a/img/banner-offcampus-sm.jpg?1538063248" alt="" style="-ms-interpolation-mode: bicubic; border-bottom-width: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; display: block; height: auto; line-height: 100%; max-width: 100%; outline: none; text-decoration: none; width: 600px;" width="600">
+                          </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="hero-subtitle-td container body-type" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; color: #222; font-family: Arial, sans-serif; font-size: 16px; hyphens: none; line-height: 24px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; word-break: break-word;">
+                        <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_subtitle">
+                          <p style="margin-bottom: 10px; margin-top: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="cta-td container" align="center" cellspacing="0" cellpadding="0" border="0" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-bottom: 40px; padding-top: 20px; word-break: break-word;">
+
+                        <!--  BUTTON -->
+                        <!-- Testing Instructions: Replace ${ctaLink} with a url with https, otherwise button will appear broken in some email clients-->
+
+                        <table class="button-table" id="cta" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                          <tr border="0">
+                            <td nowrap="" class="button-td major-cta" align="center" valign="top" cellspacing="0" cellpadding="0" border="0" style="-moz-hyphens: none; -webkit-hyphens: none; background-color: #ff0000; border-collapse: collapse; border-radius: 0; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; text-decoration: none; transition: all 0.25s ease-in-out; word-break: break-word;" bgcolor="#ff0000">
+                                <a href="${ctaLink}" target="_blank" style="background-color: #ff0000; border: 1px solid #ff0000; border-radius: 0; border-right: 0px; color: #ffffff; display: inline-block; font-family: Georgia, serif; font-size: 26px; padding: 14px 36px; text-align: center; text-decoration: none; transition: all 0.25s ease-in-out; white-space: nowrap;">
+                                ${ctaLinkText}
+
+                                <!--[if !mso]><!-->
+                                  <img src="https://go.explore.creighton.edu/rs/438-YRA-463/images/button-arrow.png" class="button-icon" valign="middle" style="-ms-interpolation-mode: bicubic; border-bottom-width: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; display: inline-block; height: 17px; line-height: 100%; max-height: 17px; outline: none; text-decoration: none; vertical-align: baseline; width: auto;">
+                                <!--<![endif]-->
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                        
+                        <!-- /BUTTON -->
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<!-- ============================================================================================================= -->
+<!-- Contact Info Section -->
+<!-- ============================================================================================================= -->
+
+<table class="contact-section-table full-width" id="button_only" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="contact-section-td" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 640px;" width="640">
+          <tbody>
+            <tr>
+              <td class="contact-wrapper-td container" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-bottom: 20px; padding-top: 20px; word-break: break-word;">              
+                <table class="contact-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                  <tbody>
+                    <tr>
+                      <td class="contact-copy-td body-type col1" align="left" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; color: #222; font-family: Arial, sans-serif; font-size: 16px; hyphens: none; line-height: 24px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+                        <!-- Update to appropritate default snippet id -->
+                        <div class="mktoSnippet" id="contact-copy" mktoname="Contact Us Copy" mktodefaultsnippetid="184">
+                          <p style="margin-bottom: 0; margin-top: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim.</p>
+                        </div>
+                      </td>
+                      <td class="contact-info-td col2" align="right" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 190px; word-break: break-word;" width="190">
+                        <table class="contact-info-table" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                          <tbody>
+                            <tr class="contact-info-tr">
+                              <td class="phone-td" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0; word-break: break-word;">
+                                  <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-bottom: 0px #ffffff solid; border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: middle;" valign="middle">
+                                    <tbody>
+                                      <tr>
+                                          <td class="phone-icon-td icon-td" cellspacing="0" cellpadding="0" border="0" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 5px; vertical-align: middle; word-break: break-word;" valign="middle">
+                                            <a href="tel:{{my.School-Phone}}" style="color: #222; text-decoration: none; white-space: nowrap;">
+                                              <img src="https://go.ucmodegree.org/rs/406-QCU-861/images/img-icon-phone.png" alt="phone" style="-ms-interpolation-mode: bicubic; border-bottom-width: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; display: inline-block; height: 30px; line-height: 100%; max-height: 30px; outline: none; text-decoration: none; vertical-align: middle; width: 30px;" width="30">
+                                            </a>
+                                          </td>
+                                          <td class="phone-text-td body-type" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; color: #222; font-family: Arial, sans-serif; font-size: 16px; hyphens: none; line-height: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: middle; word-break: break-word;" valign="middle">
+                                            <a href="tel:{{my.School-Phone}}" style="color: #222; text-decoration: none; white-space: nowrap;">
+                                              {{my.School-Phone}}
+                                            </a>
+                                          </td>
+                                        
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                
+                              </td>
+                            </tr>
+                            <tr class="contact-info-tr">
+                              <td class="email-td" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 5px 0; word-break: break-word;">
+                                  <table cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-bottom: 0px #ffffff solid; border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: middle;" valign="middle">
+                                    <tbody>
+                                      <tr>
+                                        <td class="email-icon-td icon-td" cellspacing="0" cellpadding="0" border="0" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 5px; vertical-align: middle; word-break: break-word;" valign="middle">
+                                          <a href="mailto:{{my.School-Email}}?subject=Learn More Request - {{my.School-Name}} - ID: {{lead.Id}} (please keep this as your subject)" style="color: #222; text-decoration: none; white-space: nowrap;">
+                                            <img src="https://go.ucmodegree.org/rs/406-QCU-861/images/img-icon-email.png" alt="email" style="-ms-interpolation-mode: bicubic; border-bottom-width: 0; border-left-width: 0; border-right-width: 0; border-top-width: 0; display: inline-block; height: 30px; line-height: 100%; max-height: 30px; outline: none; text-decoration: none; vertical-align: middle; width: 30px;" width="30">
+                                          </a>
+                                        </td>
+                                        <td class="email-text-td body-type" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; color: #222; font-family: Arial, sans-serif; font-size: 16px; hyphens: none; line-height: 100%; mso-table-lspace: 0pt; mso-table-rspace: 0pt; vertical-align: middle; word-break: break-word;" valign="middle">
+                                          <a href="mailto:{{my.School-Email}}?subject=Learn More Request - {{my.School-Name}} - ID: {{lead.Id}} (please keep this as your subject)" style="color: #222; text-decoration: none; white-space: nowrap;">
+                                            ${emailLinkText}
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- ============================================================================================================= -->
+<!-- Bottom Apply Section -->
+<!-- ============================================================================================================= -->
+
+<table class="apply-btm-table full-width" id="button_only" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+  <tbody>
+    <tr>
+      <td class="apply-btm-td" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 640px;" width="640">
+          <tbody>
+            <tr>
+              <td class="apply-btm-wrapper-td container" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-bottom: 20px; padding-top: 20px; word-break: break-word;">              
+                <table class="apply-btm-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                  <tbody>
+                    <tr>
+                      <td class="apply-btm-headline-td headline-type col1" align="left" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; font-family: Georgia, serif; font-size: 26px; hyphens: none; line-height: 31.2px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding-right: 20px; word-break: break-word;">
+                        <div class="mktoText" mktoname="Apply" id="apply_btm_title">
+                          <p style="margin: 0;">CTA Bottom Apply Section CTA Bottom.</p>
+                        </div>
+                      </td>
+                      <td class="col2 apply-btm-button-td" align="right" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+                        <table class="apply-btm-button-table" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                          <tbody>
+                            <tr>
+                              <td class="cta-td container" align="center" cellspacing="0" cellpadding="0" border="0" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 0; padding-bottom: 20px; padding-top: 20px; word-break: break-word;">
+
+                                <!--  BUTTON -->
+                                <!-- Testing Instructions: Replace ${minorCtaLink} with a url with https, otherwise button will appear broken in some email clients-->
+
+                                <table class="button-table" id="cta" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+                                  <tr border="0">
+                                    <td nowrap="" class="button-td minor-cta" align="center" valign="top" cellspacing="0" cellpadding="0" border="0" style="-moz-hyphens: none; -webkit-hyphens: none; background-color: #007eff; border-collapse: collapse; border-radius: 0; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; text-decoration: none; transition: all 0.25s ease-in-out; word-break: break-word;" bgcolor="#007eff">
+                                      <a href="${minorCtaLink}" target="_blank" style="background-color: #007eff; border: 1px solid #007eff; border-radius: 0; border-right: 0px; color: #ffffff; display: inline-block; font-family: Arial, sans-serif; font-size: 20px; padding: 10px 20px; text-align: center; text-decoration: none; transition: all 0.25s ease-in-out; white-space: nowrap;">
+                                        ${minorCtaLinkText}
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </table>
+                                
+                                <!-- /BUTTON -->
+
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<!-- Begin Footer -->
+<table class="footer-table full-width" id="footer" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+  <tbody>
+    <tr>
+      <td valign="top" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 640px;" width="640">
+          <tbody>
+            <tr>
+              <td class="footer-td container body-type" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; color: #333; font-family: Arial, sans-serif; font-size: 16px; hyphens: none; line-height: 24px; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-bottom: 10px; padding-top: 20px; text-align: left; word-break: break-word;" align="left">
+                <div class="mktoSnippet" id="emailFooter" mktoname="Email Footer" mktodefaultsnippetid="178">
+
+                  <!-- Be sure to copy and paste the below code from your built email into the School Footer (Graphic Emails) snippet after development, as the below copy will be replaced with that snippet. content and styling.--> 
+
+                  <p style="margin-bottom: 10px; margin-top: 0;"><span class="school-name-span">{{my.School-Name}}<br></span><a style="color: #333; text-decoration: none; transition: all 0.25s ease-in-out;">{{my.School-Address}}<br>{{my.School-City}}, {{my.School-State}} {{my.School-ZIP}}</a></p>
+
+                  <!-- End here-->
+                  
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- End Footer -->
+
+<!-- Opt Out -->
+<table class="opt-out-table full-width" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 100%;">
+  <tbody>
+    <tr>
+      <td valign="top" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" width="640" role="presentation" style="border-collapse: collapse; border-spacing: 0; box-sizing: border-box; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width: 640px;">
+          <tbody>
+            <tr>
+              <td class="opt-out-td container" style="-moz-hyphens: none; -webkit-hyphens: none; border-collapse: collapse; box-sizing: border-box; color: #333; font-family: Arial, sans-serif; font-size: 13px; hyphens: none; mso-table-lspace: 0pt; mso-table-rspace: 0pt; padding: 10px 20px 0; padding-bottom: 10px; text-align: left; word-break: break-word;" align="left">
+                <p style="margin: 0;">This email was sent to {{lead.Email Address}}. If you no longer wish to receive these emails, you may <a href="{{my.School-OptOut}}?optout=true&email={{lead.Email Address}}" style="color: #333; text-decoration: underline; transition: all 0.25s ease-in-out;">unsubscribe at any time</a>.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- End Opt Out -->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- End Body Table -->
+
+<!--[if gte mso 15]>
+<table class="wrapper" cellpadding="0" cellspacing="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td style="height:1px;" height="1">
+        <div height="1" width="600" style="display: block; max-height: 1px; min-height: 1px; min-width: 600px; width: 600px;">&nbsp;</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<![endif]-->
+
+</body>
+</html>

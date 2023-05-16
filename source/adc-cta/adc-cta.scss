@@ -1,0 +1,101 @@
+
+@import "../sass/vendor/_eab.scss";
+@import "../sass/_settings";
+@import "../sass/_type";
+@import "../sass/vendor/_global.scss";
+@import "../sass/_shared.scss";
+@import "../sass/_buttons.scss";
+@import "../sass/_modules.scss";
+@import "../sass/vendor/_helper.scss";
+ 
+ 
+// ============================================================
+// Any Hero section from the CTA template can be used here
+// ============================================================
+
+// ============================================================
+// Hero Section with Banner Image
+// ============================================================
+
+// Background:
+// background styles need to be defined inline because of Marketo variables.
+// define on hero-td class and the IE fix below it.
+// make sure to replace with original marketo variable after testing. ${heroBackgroundImage}
+
+.hero-banner-img{
+	// background-color: $c-placeholder;
+
+	.hero-headline-td{
+		padding-top: 40px;
+		padding-bottom:10px;
+	}
+
+	.hero-img-td {
+		padding-top:0 !important;
+
+		img {
+			width: $mq-small - $d-sidePadding*2;
+			max-width: 100%;
+			height: auto; 
+		}
+	}
+}
+
+// ============================================================
+// Bottom Apply Section
+// ============================================================
+
+.apply-btm-table{
+	// background: $c-placeholder;
+
+	.col1{
+		padding-right:$d-sidePadding;
+	}
+
+	.container{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+
+	.apply-btm-button-td{
+		.container{
+			padding:0 !important;
+		}
+	}
+
+	@media (max-width: 600px){
+	  .apply-btm-wrapper-td{
+	  	padding-bottom:40px !important;
+	  }
+
+	  .apply-btm-headline-td{
+	  	padding-right:0 !important;
+	  }
+
+
+		.col1, .col2{
+	    display: block !important;
+	    width: 100% !important;
+		}
+
+		.col2{
+			> table{
+				margin:auto;
+			}
+		}
+
+		.apply-btm-button-td{
+			padding-top:20px;
+		}
+	}
+
+	@media (max-width: $mq-tiny){
+	.apply-btm-content-table,
+  .apply-btm-button-table{
+    width:100% !important;
+  }
+
+}
+
+
+}

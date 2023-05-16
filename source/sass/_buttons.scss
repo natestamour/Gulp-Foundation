@@ -1,0 +1,148 @@
+
+// ================
+// Button Styles
+// ================
+
+
+// button spacer needed if button is on Outlook background fix. 
+.button-side-spacer{
+  width: $d-sidePadding;
+  border:0;
+
+  @media screen and (max-width: $mq-small) {
+    width: $d-sidePaddingSmall !important;
+  }
+}
+
+
+// ============================================================
+// Base Button Styles
+
+.cta-td{
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.button-td, 
+.button-td a{
+  border-radius: 0;
+  text-align:center;
+  text-decoration: none;
+  transition: all 0.25s ease-in-out;
+}
+
+.button-td a{
+  display: inline-block;
+  padding: 14px 36px;
+  border-right: 0px;
+  text-decoration: none;
+  white-space:nowrap; //outlook does not respect, so also make sure you use &nbsp; between words.
+}
+
+// Make button full-width on small screens
+@media (max-width: $mq-tiny){
+
+  .button-wrapper-table,
+  .button-table,
+  .button-td,
+  .button-td a{
+      width:100% !important;
+  }
+
+  .button-td a{
+    padding-right: 0 !important;
+    padding-left:0 !important;
+  }
+}
+
+
+// ============================================================
+// Major Button Styles (SJ CTA, ADC Inquiry CTA)
+
+.major-cta, 
+.major-cta a{
+  background-color: $c-majorCTABg;
+
+    // note: hover will not work in some email clients
+  &:hover{
+    background-color: darken($c-majorCTABg, 10%) !important;
+    border-color: darken($c-majorCTABg, 10%) !important;
+  }
+}
+
+.major-cta a{
+  padding: 14px 36px;
+  border: 1px solid $c-majorCTABg;
+  color: $c-majorCTAType;
+  font-size: $d-majorButtonFont;
+  font-family: $f-headline;
+
+  @media (max-width: $mq-tiny){
+    font-size: $d-majorButtonFontSmall !important;
+  }
+}
+
+
+// ============================================================
+// Minor Button Styles (ADC Apply CTA)
+
+.minor-cta, 
+.minor-cta a{
+  background-color: $c-minorCTABg;
+
+  // note: hover will not work in some email clients
+  &:hover{
+    background-color: darken($c-minorCTABg, 10%) !important;
+    border-color: darken($c-minorCTABg, 10%) !important;
+  }
+}
+
+.minor-cta a{
+  padding: 10px 20px;
+  border: 1px solid $c-minorCTABg;
+  color: $c-minorCTAType;
+  font-size: $d-minorButtonFont;
+  font-family: $f-body;
+
+  @media (max-width: $mq-tiny){
+    font-size: $d-minorButtonFontSmall !important;
+  }
+}
+
+
+// ========================================================
+// Non bullet-proof button. Might not work properly if on top of outlook background. 
+// Mixin to turn <a> tag into a button. Place on the <td> immediately surrounding the link
+
+@mixin non-bp-button ($_c-buttonBg: blue, $_c-buttonText: white, $_d-padding:5px){
+  padding:0 !important;
+
+  &, a{
+    background-color: $_c-buttonBg;
+    border-radius: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+
+    // note: hover will not work in some email clients
+    &:hover{
+      background-color: darken($_c-buttonBg, 10%) !important;
+      border-color: darken($_c-buttonBg, 10%) !important;
+    }
+  }
+
+  a{
+    display: inline-block;
+    padding: $_d-padding;
+    border: 1px solid $_c-buttonBg;
+    border-right: 0px;
+    color: $_c-buttonText;
+    text-decoration: none;
+
+    &:hover,
+    &:focus{
+      color: $_c-buttonText !important;
+    }
+  }
+}
+

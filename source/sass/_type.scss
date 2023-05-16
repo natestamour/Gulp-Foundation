@@ -1,0 +1,82 @@
+
+// ================
+// Type
+// ================
+
+// ============================================================
+// Type
+
+.headline-type,
+%headline-type{
+  font-size: $d-headlineFont;
+  line-height: $d-headlineFont*1.2;
+  font-family: $f-headline;
+
+  p{
+    margin:0;
+  }
+}
+
+.sub-headline-type,
+%sub-headline-type{
+  font-weight:bold;
+  font-size: $d-subHeadlineFont;
+  line-height: $d-subHeadlineFont*1.2;
+  font-family: $f-headline;
+
+  p{
+    margin:0;
+  }
+}
+
+.body-type,
+%body-type{
+  color: $c-bodyType;
+  font-size: $d-baseFont;
+  line-height: $d-baseFont*1.5;
+  font-family: $f-body;
+
+  p{
+    margin-top:0;
+    margin-bottom:10px;
+  }
+}
+
+@media screen and (max-width: $mq-tiny) {
+
+  .headline-type{
+    font-size: $d-headlineFontSmall !important;
+    line-height: $d-headlineFontSmall*1.2 !important;
+  }
+
+  .sub-headline-type{
+    font-size: $d-subHeadlineFontSmall !important;
+    line-height: $d-subHeadlineFontSmall*1.2 !important;
+  }
+
+  .body-type{
+    font-size: $d-baseFontSmall !important;
+    line-height: $d-baseFontSmall*1.5 !important;
+  }
+}
+
+
+// ============================================================
+// Links
+
+a,
+a:link {
+
+  p &,
+  li &{
+    color: $c-link;
+    text-decoration: underline;
+    transition: all 0.25s ease-in-out;
+      
+    &:hover, 
+    &:focus{
+      color: darken($c-link, 15%) !important;
+      text-decoration:none !important;
+    }
+  }
+}

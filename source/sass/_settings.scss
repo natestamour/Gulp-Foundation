@@ -1,0 +1,84 @@
+
+// ================
+// Settings 
+// ================
+
+
+
+// ============================================================
+// Custom Fonts
+// ============================================================
+// Note: If using google fonts, use their import method below
+
+// @include fontFace("file name", "font family", normal/bold, normal/italic);
+
+
+// ============================================================
+// Variables
+// ============================================================
+
+// Font Stacks - WITHOUT Custom Fonts - UNCOMMENT CODE BELOW
+$f-headline: Georgia, serif;
+$f-body: Arial, sans-serif;
+
+
+// Font Stacks - WITH Custom Fonts - UNCOMMENT CODE BELOW
+
+// Instructions: Add custom fonts to the END of the font stack for Outlook compatibility
+// $f-headline: Georgia, serif, 'CustomHeadlineFontName';
+// $f-body: Arial, sans-serif, 'CustomBodyFontName';
+
+// Instructions: Add custom fonts to the BEGINNING of the font stack for supporting email clients
+// [style*='CustomHeadlineFontName'] {
+// 	font-family: 'CustomHeadlineFontName', Georgia, serif !important;
+// }
+
+// [style*='CustomBodyFontName'] {
+// 	font-family: 'CustomBodyFontName', Arial, sans-serif !important;
+// }
+
+// Colors ====================
+$c-placeholder: #ffffff; // replace each instance with desired color variable.
+
+// School colors
+
+
+// Font Colors
+$c-bodyType: #222;
+$c-link: #00f;
+$c-footerType: #333;
+$c-OptOutType: #333;
+
+// Button Colors
+$c-majorCTABg: #ff0000;
+$c-majorCTAType: #ffffff;
+
+$c-minorCTABg: #007eff;
+$c-minorCTAType: #ffffff;
+
+
+// Font Sizes ====================
+
+$d-headlineFont: 26px;
+$d-headlineFontSmall: 22px;
+
+$d-subHeadlineFont: 20px;
+$d-subHeadlineFontSmall: 18px;
+
+$d-baseFont: 16px;
+$d-baseFontSmall: 15px;
+
+// Button fonts
+$d-majorButtonFont: $d-headlineFont;
+$d-majorButtonFontSmall: $d-headlineFontSmall;
+
+$d-minorButtonFont: $d-subHeadlineFont;
+$d-minorButtonFontSmall: $d-subHeadlineFontSmall;
+
+
+// Breakpoints ====================
+$mq-small: 640px;
+$mq-tiny: 480px;
+$mq-base: 320px;
+
+

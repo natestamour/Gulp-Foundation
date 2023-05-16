@@ -1,0 +1,33 @@
+
+// ================
+// EAB Mixins
+// ================
+
+// ========================================================
+// Shorthand @font-face Declaration. Use for delcaring custom fonts.
+
+@mixin fontFace($_p-fileName, $_f-fontFamily: $_fileName, $_f-fontWeight: normal, $_f-fontStyle: normal) {
+
+////// Description:
+  // - shorthand mixin for @font-face declarations
+
+////// @param $_fileName 
+  // - the base filename without the extention
+
+////// @param $_fontFamily 
+  // - the given name of the font / derives from the file-name if not provided
+
+////// @param $_fontWeight 
+  // - the given weight of the font / defaults to normal if not provided
+
+////// @param $_fontStyle 
+  // - the given weight of the font / defaults to normal if not provided
+
+  @font-face {
+    font-style: $_f-fontStyle;
+    font-weight: $_f-fontWeight;
+    font-family: '#{$_f-fontFamily}';
+    src: url('#{$_p-fileName}.woff') format('woff');
+  }
+
+}

@@ -1,0 +1,287 @@
+
+@import "../sass/vendor/_eab.scss";
+@import "../sass/_settings";
+@import "../sass/_type";
+@import "../sass/vendor/_global.scss";
+@import "../sass/_shared.scss";
+@import "../sass/_buttons.scss";
+@import "../sass/_modules.scss";
+@import "../sass/vendor/_helper.scss";
+
+// ============================================================
+// General Newsletter Styles 
+// ============================================================
+
+.news-link-td{
+  // Uncomment for button treatment. Mixin in button partial.
+  // @include non-bp-button(blue, white, 5px);
+}
+
+.newslink{
+  color: $c-link;
+  text-decoration: none !important;
+  font-family: $f-body;
+
+  &:hover,
+  &:focus {
+    color: darken($c-link, 15%) !important;
+    transition: all 0.25s ease-in-out;
+  }
+
+  // Icon is hidden by default on MSO because alignment is tricky for many. If you would like the icon in MSO: 
+  // 1.) Remove the IE conditionals in the button partial. 
+  // 2.) In order to middle align the icon in MSO, it must be around half the height of the text next to it.
+  // 3.) Add &nbsp; in order to create space between icon and text.
+
+  img {
+    display: inline-block !important;
+    vertical-align: middle;
+    height: 15px;
+    max-height: 15px;
+    width: 15px;
+  }
+}
+
+
+
+
+// ============================================================
+// Header with Newsletter Title
+// ============================================================
+
+.header-and-title{
+
+  .col-1{
+    width: $d-logoWidth;
+  }
+
+  .col-2{
+    width: $mq-small - $d-logoWidth - $d-sidePadding *2;
+    padding-left: $d-sidePadding;
+  }
+
+  .header-wrapper-td{
+    padding-top:10px;
+    padding-bottom:10px;
+  }
+
+  .header-title-td{
+    text-align:right;
+  }
+
+  @media (max-width: $mq-small){
+    width:100% !important;
+
+    .col-1, .col-2{
+      display:block;
+      width:100% !important;
+    }
+
+    .header-wrapper-td > table{
+      width:100% !important;
+    }
+
+    .header-title-td{
+      padding-top:10px !important;
+      text-align:left !important;
+    }
+  }
+
+}
+
+// ============================================================
+// Newsletter Items With Image
+// ============================================================
+
+.news-section{
+  width:100%;
+}
+
+.news-module-right,
+.news-module-left{
+  // background:$c-placeholder;
+
+  .news-container{
+    padding:$d-sidePadding 0;
+    // background-color: $c-placeholder;
+    border-bottom: 2px solid #808080;
+  }
+
+  .news-table{
+    width: $mq-small - $d-sidePadding *2;
+  }
+
+  .news-img-table, 
+  .news-img{
+    width:200px;
+
+      img{
+        height:auto;
+    }
+  }
+
+  .news-copy-table{
+    width: 380px;
+
+    td{
+      text-align:left;
+    }
+  }
+
+  .news-text-td{
+    padding: 5px 0;
+  }
+
+  @media (max-width: $mq-small){
+    .news-table{
+      width:100% !important;
+    }
+
+    .news-container{
+      padding: $d-sidePadding !important;
+    }
+
+      .news-img-table {
+          width:40% !important;
+
+          img{
+            width:100% !important;
+          }
+      }
+
+      .news-copy-table {
+        width:60% !important;
+      }
+
+    .img-left-td{
+      padding-right: $d-sidePaddingSmall;
+    }
+
+    .img-right-td{
+      padding-left: $d-sidePaddingSmall;
+    }
+  }
+
+  @media (max-width:$mq-tiny){
+    .news-img-table,
+    .news-copy-table {
+      width: 100% !important;
+    }
+
+    .news-img-td{
+      padding:0 0 20px !important;
+
+      img{
+        width: 70% !important;
+        margin:auto;
+      }
+    }
+
+    .news-container{
+      padding:20px $d-sidePaddingSmall !important;
+    }             
+  }
+}
+
+
+
+// ============================================================
+// Newsletter Items Without Image
+// ============================================================
+
+.news-section{
+  // background: $c-placeholder;
+}
+
+// Optional banner image module
+.news-banner-img-table{
+  // background: $c-placeholder;
+  
+  img{
+    width: $mq-small;
+    max-width: 100%;
+    height: auto; 
+  }
+}
+
+.news-no-img-table{
+  // background: $c-placeholder;
+
+  &.news-single-story{
+  
+  }
+  
+  //use width of col to create space between news items rather than padding #OutlookProblems. 
+  .col{
+    width:308px;
+  }
+
+  //border is included by default to seperate news section in case optional banner image is not used. 
+  .wrapper{
+    border-bottom: 1px solid #808080;
+  }
+
+  //1st news item
+  .news-item-1{
+
+  }
+
+  //2nd news item
+  .news-item-2{
+
+  }
+
+  .news-container{
+    padding: 20px 0;
+  }
+
+  .news-title-td{
+    
+  }
+
+  .news-text-td{
+    padding: 5px 0;
+  }
+
+
+  @media (max-width: $mq-small +10px) {
+    .news-container{
+      padding-right: $d-sidePaddingSmall !important;
+      padding-left: $d-sidePaddingSmall !important;
+    }
+
+    .col{
+      width:50% !important;
+    }
+  }
+
+  @media (max-width: 550px){
+    .col, .col2{
+        display: table !important;
+        width: 100% !important;
+    }
+
+    .news-item-2 .news-container{
+      border-top: 1px solid #808080;
+    }
+  }
+}
+
+// ============================================================
+// Bottom CTA for Newsletter
+// ============================================================
+
+.bottom-cta{
+  // background-color: $c-placeholder;
+
+  .cta-title-td{
+    padding-top:40px;
+    text-align:center;
+  }
+
+  .cta-text-td{
+    
+  }
+}
+
+

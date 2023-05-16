@@ -1,0 +1,490 @@
+<include src="../_partials/_page-header.html" stylesheet="newsletter.css"></include>
+
+<!-- 
+  USAGE NOTES:
+  - Components are written modularly to stand on their own.
+  - Each component has companion SCSS found in the companion scss file
+  - More information can be found here: https://wiki.eab.com/display/ALR/ALR+Gulp
+
+  BACKGROUND IMAGES:
+  - Backgrounds must still be declared inline due to the marketo variable. 
+    Replace your image URL with ${heroBackgroundImage} before adding to Marketo, otherwise you will not be able to change it in the IDE.
+  -->
+
+<!-- ============================================================================================================= -->
+<!-- Header -->
+<!-- ============================================================================================================= -->
+
+<include src="../_partials/_header.html"></include>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Header with Newsletter Title -->
+<!-- ============================================================================================================= -->
+
+<table class="header-and-title full-width" id="secondary_CTA" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation"> 
+    <tbody>
+        <tr>
+            <td valign="top">
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                    <tbody>
+                        <tr>
+                            <td class="header-wrapper-td" valign="bottom">
+                                <table align="center" cellspacing="0" cellpadding="0" border="0" valign="bottom" role="presentation">
+                                    <tbody>
+                                        <tr>
+                                            <td class="logo-td header-content-td container col-1" align="left">
+                                                <include src="../_partials/_logo.html"></include>
+                                            </td>
+                                            <td class="header-title-td headline-type container col-2" valign="bottom">
+                                            <div class="mktoText" mktoname="Hero Title" id="hero_title">
+                                                <p>Newsletter Title</p>
+                                            </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Any Hero section from the CTA template can be used here, simply remove the button-->
+<!-- ============================================================================================================= -->
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Newsletter Items - Pick the modules you need below -->
+<!-- ============================================================================================================= -->
+
+<!-- mktoContainer wrapping table - DO NOT DELETE -->
+<table class="news-section" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td class="mktoContainer" id="template-wrapper">
+
+
+
+        <!-- ============================================================================================================= -->
+        <!-- Newsletter Items With Image (modules) -->
+        <!-- ============================================================================================================= -->
+
+        <!-- News Item Left Photo Module -->
+        <table class="mktoModule news-module-left full-width" id="news_photo_left" align="center" cellspacing="0" cellpadding="0" border="0" mktoname="News Item Photo Left" role="presentation">
+          <tbody>
+            <tr>
+              <td class="module news-container" valign="top">
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="news-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td>
+
+                                <table class="news-img-table" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td class="news-img-td img-left-td">
+                                        <div class="mktoImg" mktoname="News Item Image" id="news_photo_left_img" mktolockimgstyle="true" mktoImgLink="${newslink}">
+                                          <a><img class="news-img" src="https://semantic-ui.com/images/wireframe/square-image.png"/></a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <table class="news-copy-table" align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td class="news-title-td sub-headline-type">
+                                        <div class="mktoText" mktoname="Title" id="news_photo_left_title">
+                                          <p>Newsletter Item Left</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="news-text-td body-type">
+                                        <div class="mktoText" mktoname="Text" id="news_photo_left_text">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus.</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table class="news-button-table" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                          <tbody>
+                                            <tr>
+                                              <td class="news-link-td">
+                                                  <!-- replace ${newslink} variable with url for testing -->
+                                                  <a href="${newslink}" class="newslink"> ${newslinktext}
+                                                    <!--[if !mso]-->
+                                                      <img src="https://go.LasellGraduate.org/rs/560-SWL-265/images/arr.png" alt="→">
+                                                    <!--[endif]-->
+                                                  </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End News Item Left Photo Module-->
+
+        <!-- News Item Right Photo Module -->
+        <table class="mktoModule news-module-right full-width" id="photo_right" align="center" cellspacing="0" cellpadding="0" border="0" mktoname="News Item Photo Right" role="presentation">
+          <tbody>
+            <tr>
+              <td class="module news-container" valign="top">
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="news-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <table class="news-img-table" align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td valign="top" class="news-img-td img-right-td">
+                                        <div class="mktoImg" mktoname="News Item Image" id="news_photo_right_img" mktolockimgstyle="false" mktoImgLink="${newslink}">
+                                          <a><img class="news-img" src="https://semantic-ui.com/images/wireframe/square-image.png"/></a>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+
+                                <table class="news-copy-table" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td class="news-title-td sub-headline-type">
+                                        <div class="mktoText" mktoname="News Item Title" id="news_photo_right_title">
+                                          <p>Newsletter Item Right</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="news-text-td body-type">
+                                        <div class="mktoText" mktoname="News Item Text" id="news_photo_right_text">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus.</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table class="news-button-table" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                          <tbody>
+                                            <tr>
+                                              <td class="news-link-td">
+                                                  <!-- replace ${newslink} variable with url for testing -->
+                                                  <a href="${newslink}" class="newslink">${newslinktext}
+                                                    <!--[if !mso]-->
+                                                      <img src="https://go.LasellGraduate.org/rs/560-SWL-265/images/arr.png" alt="→">
+                                                    <!--[endif]-->
+                                                  </a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End News Item Right Photo Module-->
+        <!-- End Newsletter Items With Image (modules) -->
+
+
+
+        <!-- ============================================================================================================= -->
+        <!-- Newsletter Items With No Image and Optional Banner Image -->
+        <!-- ============================================================================================================= -->
+
+        <!-- News Banner Image Module -->
+        <table class="mktoModule news-banner-img-table full-width" id="news_banner_img" align="center" cellspacing="0" cellpadding="0" border="0" mktoname="News Banner Image" role="presentation">
+          <tbody>
+            <tr>
+              <td>
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="news-img-td" valign="top" align="right">
+                          <div class="mktoImg" mktoname="Hero Banner Image" id="hero_banner_img" mktolockimgstyle="false">
+                            <img src="https://greenglobaltravel.com/wp-content/uploads/Guanaco_Patagonia-edited.jpg">
+                          </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End News Banner Image Module -->
+
+        <!-- No Img News Items Module -->
+        <table class="mktoModule news-no-img-table full-width" id="news_no_img" align="center" cellspacing="0" cellpadding="0" border="0" mktoname="News Items (No Image)" role="presentation">
+          <tbody>
+            <tr>
+              <td class="module" valign="top">
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td>
+
+                        <!-- First News Item -->
+                        <table class="news-item-1 col" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td class="news-container">
+                                <table align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                      <tr>
+                                        <td class="news-title-td sub-headline-type">
+                                          <div class="mktoText" mktoname="Title" id="news_item_1_title">
+                                            <p>Newsletter Item Left</p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="news-text-td body-type">
+                                          <div class="mktoText" mktoname="Text" id="news_item_1_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus.</p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                         <table class="news-button-table" align="left" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                            <tr>
+                                              <td class="news-link-td body-type" valign="middle">
+                                                  
+                                                  <!-- replace ${newslink} with url for testing -->
+                                                  <a href="${newslink}" class="newslink">${newslinktext}
+                                                    <!--[if !mso]-->
+                                                      <img src="https://go.LasellGraduate.org/rs/560-SWL-265/images/arr.png" alt="→">
+                                                    <!--[endif]-->
+                                                  </a>
+
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                        <!-- End First News Item -->
+
+                        <!-- Second News Item -->
+                        <table class="news-item-2 col" align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td class="news-container">
+                                <table align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                    <tr>
+                                      <td class="news-title-td sub-headline-type">
+                                        <div class="mktoText" mktoname="News Item Title" id="news_item_2_title">
+                                          <p>Newsletter Item Right</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="news-text-td body-type">
+                                        <div class="mktoText" mktoname="News Item Text" id="news_item_2_text">
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus.</p>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                       <table class="news-button-table" align="left" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                          <tr>
+                                            <td class="news-link-td body-type" valign="middle">
+
+                                                <!-- replace ${newslink2} with url for testing -->
+                                                <a href="${newslink2}" class="newslink">${newslinktext2}
+                                                  <!--[if !mso]-->
+                                                    <img src="https://go.LasellGraduate.org/rs/560-SWL-265/images/arr.png" alt="→">
+                                                  <!--[endif]-->
+                                                </a>
+                                              
+                                            </td>
+                                          </tr>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <!-- End Second News Item -->
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End Two Column Newsletter Module -->
+
+        <!-- Single Column Newsletter Module -->
+        <table class="mktoModule news-no-img-table news-single-story full-width" id="news_no_img_single" align="center" cellspacing="0" cellpadding="0" border="0" mktoname="News Item (No Image)" role="presentation">
+          <tbody>
+            <tr>
+              <td class="module" valign="top">
+                <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <table class="news-item-single" align="left" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                          <tbody>
+                            <tr>
+                              <td class="news-container">
+                                <table align="right" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                                  <tbody>
+                                      <tr>
+                                        <td class="news-title-td sub-headline-type">
+                                          <div class="mktoText" mktoname="Title" id="news_item_title">
+                                            <p>Single News Item</p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="news-text-td body-type">
+                                          <div class="mktoText" mktoname="Text" id="news_item_text">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus.</p>
+                                          </div>
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td>
+                                         <table class="news-button-table" align="left" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                                            <tr>
+                                              <td class="news-link-td body-type" valign="middle">
+                                                  
+                                                  <!-- replace ${newslink} with url for testing -->
+                                                  <a href="${newslink}" class="newslink">${newslinktext}
+                                                    <!--[if !mso]-->
+                                                      <img src="https://go.LasellGraduate.org/rs/560-SWL-265/images/arr.png" alt="→">
+                                                    <!--[endif]-->
+                                                  </a>
+
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </td>
+                              </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- End No Img News Items Module -->
+        <!-- End Newsletter Items With No Image and Optional Banner Image -->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- End mktoContainer wrapping table -->
+
+
+<!-- ============================================================================================================= -->
+<!-- Bottom CTA for Newsletter Only -->
+<!-- ============================================================================================================= -->
+
+<table class="bottom-cta full-width" id="bottom_CTA" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td class="bottom-cta-td" valign="top">
+        <table class="cta-content-table wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td class="cta-title-td container headline-type">
+                <div class="mktoText" mktoname="Bottom Title" id="bottom_CTA_title">
+                  <p>Bottom CTA for Newsletter Only</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="cta-text-td container body-type">
+                <div class="mktoText" mktoname="Bottom Subtitle" id="bottom_CTA_subtitle">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim.</p>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <table class="button-wrapper-table container" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                  <tbody>
+                    <include src="../_partials/_button.html"></include>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<include src="../_partials/_page-footer.html"></include>

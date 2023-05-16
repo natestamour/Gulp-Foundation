@@ -1,0 +1,415 @@
+<include src="../_partials/_page-header.html" stylesheet="cta.css"></include>
+
+ <!-- 
+  USAGE NOTES:
+  - Components are written modularly to stand on their own.
+  - Each component has companion SCSS found in the companion scss file
+  - More information can be found here: https://wiki.eab.com/display/ALR/ALR+Gulp
+
+  BACKGROUND IMAGES:
+  - Backgrounds must still be declared inline due to the marketo variable. 
+  - Replace your image URL with ${heroBackgroundImage} before adding to Marketo, otherwise you will not be able to change it in the IDE.   
+  -->
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Header -->
+<!-- ============================================================================================================= -->
+
+<include src="../_partials/_header.html"></include>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Hero with Logo and Background -->
+<!-- ============================================================================================================= -->
+
+<!-- Fix to prevent the Outlook background image fix from collapsing the table it is on. Only needed if IE background fix is on the first table of the email -->
+
+<!--[if gte mso 15]>
+<table class="wrapper" cellpadding="0" cellspacing="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td style="height:1px;" height="1">
+        <div height="1" width="600" style="display: block; max-height: 1px; min-height: 1px; min-width: 600px; width: 600px;">&nbsp;</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<![endif]-->
+
+<!-- end Outlook fix -->
+
+<table class="hero-background-img full-width" id="hero" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td>
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+
+              <!-- Background must be defined inline here and in the Outlook fix below -->
+              <td class="hero-td" style="background-color:#eeeeee; background: url(https://www.infoplease.com/sites/infoplease.com/files/inline-images/mount_everest_650.jpg) no-repeat center top /cover; background-size:cover; background-repeat: no-repeat;" valign="top" background="https://www.infoplease.com/sites/infoplease.com/files/inline-images/mount_everest_650.jpg">
+                <center>
+
+                  <!--[if gte mso 9]>
+                  <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="top: 0; width:640px;">
+                  <v:fill type="frame" aspect="atleast" src="https://www.infoplease.com/sites/infoplease.com/files/inline-images/mount_everest_650.jpg" color="#eeeeee"/>
+                  <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+                  <![endif]-->
+                  
+                  <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                    <tbody>
+                      <tr>
+                        <td class="logo-td container" align="center">
+                          <include src="../_partials/_logo.html"></include>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="hero-headline-td container headline-type">
+                          <div class="mktoText" mktoname="Hero Title" id="hero_title">
+                            <p>Hero with Logo and Background</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="hero-subtitle-td container body-type">
+                          <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_subtitle">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <table class="button-wrapper-table" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                            <tbody>
+                              <tr>
+                                
+                                <!--[if gte mso 9]>           
+                                <td class="button-side-spacer" cellspacing="0" cellpadding="0" border="0"></td>
+                                <![endif]-->
+
+                                  <include src="../_partials/_button.html"></include>
+
+                                <!--[if gte mso 9]>           
+                                <td class="button-side-spacer" cellspacing="0" cellpadding="0" border="0"></td>
+                                <![endif]-->
+
+                              </tr>
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <!--[if gte mso 9]>
+                  <p style="margin:0;mso-hide:all"><o:p xmlns:o="urn:schemas-microsoft-com:office:office">&nbsp;</o:p></p>
+                  </v:textbox>
+                  </v:rect>
+                  <![endif]-->
+
+                </center>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Hero with Logo and Background (Full-width background) -->
+<!-- ============================================================================================================= -->
+
+<!-- Fix to prevent the Outlook background image fix from collapsing the table it is on. Only needed if IE background fix is on the first table of the email -->
+
+<!--[if gte mso 15]>
+<table class="wrapper" cellpadding="0" cellspacing="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td style="height:1px;" height="1">
+        <div height="1" width="600" style="display: block; max-height: 1px; min-height: 1px; min-width: 600px; width: 600px;">&nbsp;</div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<![endif]-->
+
+<!-- end Outlook fix -->
+
+<table class="hero-background-img full-width" id="hero" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+
+      <!-- Background must be defined inline here and in the Outlook fix below -->
+      <td style="background-color:#eeeeee; background: url(https://greenglobaltravel.com/wp-content/uploads/Guanaco_Patagonia-edited.jpg) no-repeat center top /cover; background-size:cover; background-repeat: no-repeat;" background="https://greenglobaltravel.com/wp-content/uploads/Guanaco_Patagonia-edited.jpg" valign="top">
+        <center>
+
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+          <v:fill type="frame" aspect="atleast" src="https://greenglobaltravel.com/wp-content/uploads/Guanaco_Patagonia-edited.jpg" color="#eeeeee" />
+          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+          <![endif]-->
+
+            <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+              <tbody>
+                <tr>
+                  <td class="hero-td">
+                    <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                      <tbody>
+                        <tr>
+                          <td class="logo-td container" align="center">
+                            <include src="../_partials/_logo.html"></include>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="hero-headline-td container headline-type">
+                            <div class="mktoText" mktoname="Hero Title" id="hero_title">
+                              <p>Hero with Logo and Background (Full-width background)</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="hero-subtitle-td container body-type">
+                            <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_subtitle">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <table class="button-wrapper-table" align="center" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                              <tbody>
+                                <tr>
+                                  
+                                  <!--[if gte mso 9]>           
+                                  <td class="button-side-spacer" cellspacing="0" cellpadding="0" border="0"></td>
+                                  <![endif]-->
+
+                                    <include src="../_partials/_button.html"></include>
+
+                                  <!--[if gte mso 9]>           
+                                  <td class="button-side-spacer" cellspacing="0" cellpadding="0" border="0"></td>
+                                  <![endif]-->
+
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          <!--[if gte mso 9]>
+          <p style="margin:0;mso-hide:all"><o:p xmlns:o="urn:schemas-microsoft-com:office:office">&nbsp;</o:p></p>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+
+        </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Hero With Banner Image -->
+<!-- ============================================================================================================= -->
+
+<table class="hero-banner-img full-width" id="hero" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td>
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td class="hero-td">              
+                <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="hero-headline-td container headline-type">
+                        <div class="mktoText" mktoname="Hero Title" id="hero_title">
+                          <p>Hero with Banner Image</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="hero-subtitle-td container body-type">
+                        <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_subtitle">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <include src="../_partials/_button.html"></include>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td class="hero-img-td" valign="top" align="right">
+                  <div class="mktoImg" mktoname="Hero Banner Image" id="hero_banner_img" mktolockimgstyle="false">
+                    <img src="http://www.rutgers-u.org/exceed/a/img/banner-offcampus-sm.jpg?1538063248" alt="">
+                  </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Hero With Background Image Behind Title -->
+<!-- ============================================================================================================= -->
+
+<!-- Title and Image Table -->
+
+<table class="hero-title-background full-width" id="hero" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+
+      <!-- Background must be defined inline here and in the Outlook fix below -->
+      <td background="https://greenglobaltravel.com/wp-content/uploads/Guanaco_Patagonia-edited.jpg" style="background-color:#eeeeee; background: url('https://greenglobaltravel.com/wp-content/uploads/Guanaco_Patagonia-edited.jpg') no-repeat center 60% /cover; background-size:cover; background-repeat: no-repeat;" valign="top">
+        <center>
+
+          <!--[if gte mso 9]>
+          <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="mso-width-percent:1000;">
+          <v:fill type="frame" aspect="atleast" src="https://greenglobaltravel.com/wp-content/uploads/Guanaco_Patagonia-edited.jpg" color="#eeeeee" />
+          <v:textbox style="mso-fit-shape-to-text:true" inset="0,0,0,0">
+          <![endif]-->
+
+            <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+              <tbody>
+                <tr>
+                  <td class="hero-td">
+                    <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                      <tbody>
+                        <tr>
+                          <td class="hero-headline-td container headline-type">
+                            <div class="mktoText" mktoname="Hero Title" id="hero_title">
+                              <p>Hero With Background Image Behind Title</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          <!--[if gte mso 9]>
+          <p style="margin:0;mso-hide:all"><o:p xmlns:o="urn:schemas-microsoft-com:office:office">&nbsp;</o:p></p>
+          </v:textbox>
+          </v:rect>
+          <![endif]-->
+
+        </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Copy Table -->
+
+<table class="hero-copy full-width" id="hero-copy" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td>
+        <table class="wrapper" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+          <tbody>
+            <tr>
+              <td class="hero-td">              
+                <table class="hero-content-table" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="hero-subtitle-td container body-type">
+                        <div class="mktoText copy-block" mktoname="Hero Subtitle" id="hero_subtitle">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur purus eu, fermentum ex. Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <include src="../_partials/_button.html"></include>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- ============================================================================================================= -->
+<!-- Free Modules -->
+<!-- ============================================================================================================= -->
+
+
+<table class="free-modules full-width" align="center" cellspacing="0" cellpadding="0" border="0" role="presentation">
+  <tbody>
+    <tr>
+      <td class="mktoContainer" id="template-wrapper">
+
+        <!-- ============================================================================================================= -->
+        <!-- Free Text Module -->
+
+        <table class="mktoModule free-text-table wrapper" id="free_text" align="center" width="100%" cellspacing="0" cellpadding="0" border="0"  mktoname="Free Text" mktoActive="true" mktoAddByDefault="false" role="presentation">
+          <tbody>
+            <tr>
+              <td class="module" valign="top">
+                <table align="left" border="0" cellspacing="0" cellpadding="0" role="presentation">
+                  <tbody>
+                    <tr>
+                      <td class="free-title-td container sub-headline-type">
+                        <div class="mktoText" mktoname="Free Text Title" id="free_text_title">
+                          <p>Free Text (module)</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="free-copy-td container body-type">
+                        <div class="mktoText" mktoname="Free Text" id="free_text_subtitle">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in justo egestas, efficitur <a href="https://eab.com">purus eu, fermentum ex.</a> Maecenas id tincidunt lorem, sit amet laoreet enim. Pellentesque vulputate posuere faucibus. Duis accumsan ante leo, quis volutpat ligula dapibus ullamcorper.</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- End Free Modules Section -->
+
+
+
+<include src="../_partials/_page-footer.html"></include>

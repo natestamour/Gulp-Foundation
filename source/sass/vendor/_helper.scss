@@ -1,0 +1,107 @@
+
+// ================
+// Helper 
+// ================
+// Optional styles that can be used for specific layouts, troubleshooting. Uncomment as needed.
+
+
+
+// ============================================================
+// Responsive Columns
+// ============================================================
+
+// .col-2 > .col{
+//   width:300px;
+// }
+
+// .col-3 > .col{
+//   width:200px;
+// }
+
+
+// @media screen and (max-width: $mq-small) {
+
+  // Sets width of all columns to a default 100% width on small screens. Use classes below to override.
+  // .col{
+  //   width: 100% !important;
+  //   display: block !important;
+  // }
+
+  // Makes a column 50% wide on small screens
+//   .col.small-6{
+//    width: 50% !important;
+//    display: inline-block !important;
+//   }
+
+//   // Makes a column 75% wide on small screens
+//   .col.small-9{
+//     width: 75% !important;
+//     display: block !important;
+//   }
+
+//   // Centers narrow columns on small screens
+//   .col.small-6.center,
+//   .col.small-9.center{
+//    display: block !important;
+//    margin-left:auto !important;
+//    margin-right:auto !important; 
+//   }
+
+// }
+
+
+// @media screen and (max-width: $mq-tiny) {
+
+//   // Makes all columns 100% wide on smallest screens
+//   .col.small-6,
+//   .col.small-9{
+//     width: 100% !important;
+//     display: block !important;
+//   }
+
+// }
+
+
+
+// ============================================================
+// Other
+// ============================================================
+
+
+// Used to visually hide an element. The following tags must be addded inline as well to hide in MSO:
+// <!--[if !mso]><!-->
+//    <Element you want hidden>
+// <!--<![endif]--> ;
+
+.visuallyhidden {
+  display: none !important;
+  visibility: hidden;
+  opacity: 0;
+  color: transparent;
+  height: 0;
+  width: 0;
+} 
+
+
+
+// .image-responsive {
+//   @media screen and (max-width: $mq-small) {
+//     width: 100% !important;
+//     height: auto !imsportant;
+//   }
+// }
+
+// .spacer-cell{
+//   line-height: 1px !important;
+//   font-size: 1px !important;
+// }
+
+
+
+// ============================================================
+// Troubleshooting
+// ============================================================
+
+// td{
+//  outline:1px dashed rgba(0,200,0,1);
+// }

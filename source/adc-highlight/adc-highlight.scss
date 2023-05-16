@@ -1,0 +1,300 @@
+
+@import "../sass/vendor/_eab.scss";
+@import "../sass/_settings";
+@import "../sass/_type";
+@import "../sass/vendor/_global.scss";
+@import "../sass/_shared.scss";
+@import "../sass/_buttons.scss";
+@import "../sass/_modules.scss";
+@import "../sass/vendor/_helper.scss";
+ 
+
+.hero-modules-table{
+	width:100%;
+	border-bottom: 0px $c-placeholder solid; //needed to prevent mso 120dpi phantom border, color should be same as module section background. 
+}
+
+// ============================================================
+// Hero Section with Banner Image
+// ============================================================
+
+.hero-banner{
+	// background: $c-placeholder;
+
+	.hero-headline-td{
+		padding-top: 40px;
+		padding-bottom:10px;
+	}
+
+	.hero-img-td {
+		padding-top:0; // no top or bottom padding so the template works without an image. 
+
+		img{
+			width: $mq-small - $d-sidePadding * 2;
+			max-width: 100%;
+			height: auto; 
+		}
+	}
+
+	@media (max-width: $mq-small) {
+
+		.hero-img-td {
+			
+			img {
+				width: 100% !important;
+			}
+		}
+	}
+}
+
+// ============================================================
+// Hero Portrait Section (Bottom on mobile)
+// ============================================================
+
+.hero-portrait{
+	// background: $c-placeholder;
+
+	.hero-portrait-td{
+		padding-top: 40px;
+		padding-bottom:20px;
+	}
+	
+	.hero-headline-td{
+		padding-bottom:20px;
+		text-align:left;
+	}
+
+	.hero-subtitle-td{
+		text-align:left;
+		vertical-align:top;
+		padding-top:0;
+	}
+
+	.potrait-img-td{
+		padding-top:0;
+		padding-left:0;
+	}
+
+	.portrait-img-lg{
+		width: 200px;
+		height:auto;
+	}
+
+	.portrait-img-mob {
+		display: none;
+	}
+
+	@media (max-width: $mq-small) {
+
+		.col1{
+			width:60% !important;
+		}
+		.col2{
+			width:30% !important;
+
+			img{
+				width:100% !important;
+			}
+		}
+	}
+
+	@media (max-width: 550px){
+		.col1, .col2{
+	    display: block !important;
+	    width: 100% !important;
+		}
+
+		.portrait-img-lg{
+			display:none !important;
+		}
+
+		.portrait-img-mob {
+			display: block !important;
+			height: auto;
+			width:100%;
+		}
+	}
+}
+
+// ============================================================
+// Alternate Hero Portrait Section
+// ============================================================
+
+.hero-portrait-alt {
+	// background: $c-placeholder;
+
+	.hero-portrait-td{
+		padding-top: 40px;
+		padding-bottom:20px;
+	}
+
+	.hero-portrait-table {
+    width: $mq-small;
+
+		&-copy {
+			width: 405px;
+		}
+
+		&-img {
+			width: 220px;
+		}
+	}
+
+		.hero-headline-td{
+		padding-bottom:20px;
+		text-align:left;
+	}
+
+	.hero-subtitle-td{
+		text-align:left;
+		vertical-align:top;
+		padding-top:0;
+	}
+
+	.portrait-img-td{
+		padding-top:0;
+		padding-left:0;
+	}
+
+	.portrait-img-lg{
+		width: 200px;
+		height:auto;
+	}
+
+		@media (max-width: $mq-small) {
+
+		.hero-portrait-table {
+	    width:100% !important;
+
+			&-copy {
+				width:66.7% !important;
+			}
+
+			&-img {
+				width:33.3% !important;
+
+				img{
+					width:100% !important;
+				}
+			}
+		}
+
+		.portrait-img-td{
+			padding-left: 0 !important;
+		}
+	}
+
+	@media (max-width: 550px){
+
+
+		.hero-portrait-table {
+
+			&-copy,
+			&-img {
+				width: 100% !important;
+			}
+
+			&-img {
+
+				img {
+					width: 90% !important;
+					max-width: 220px;
+					margin: 0 auto;
+				}
+			}
+		}
+
+		.portrait-img-td {
+			padding-right: 0 !important;
+			padding-bottom: 20px !important;
+		}
+	}
+}
+
+// ============================================================
+// Double CTA Section
+// ============================================================
+
+$d-dividerWidth: 32px; //width for middle icon. 
+
+.dbl-cta-table{
+	// background: $c-placeholder;
+	
+	.dbl-cta-td{
+		padding:30px 0; //section padding
+	}
+
+	.dbl-cta-wrapper-td,
+	.dbl-cta-content-table{
+		width:100%;
+	}
+
+	.dbl-cta-headline-td{
+		text-align:center;
+	}
+
+	//.col2
+	.divider-td{
+		width: $d-dividerWidth;
+		vertical-align:bottom;
+		white-space:nowrap;
+	}
+ 
+	.col1,
+	.col3{
+		&, a{
+			width: ($mq-small - $d-dividerWidth)/2;
+		}
+	}
+
+	.connector-td{
+		vertical-align:bottom;
+	}
+
+	.learn-td,
+	.apply-td{
+		
+		a{
+		  color: $c-link;
+		  text-decoration: none !important;
+		  font-family: $f-body;
+
+		  &:hover,
+		  &:focus {
+		    color: darken($c-link, 15%) !important;
+		    transition: all 0.25s ease-in-out;
+		  }
+		}
+
+	  // Uncomment for button treatment. Mixin in button partial.
+		// @include non-bp-button (blue, white, 5px);
+	}
+
+	@media (max-width: $mq-small){
+		.col1,
+		.col3{
+			width: 50% !important;
+		}
+
+		.col2{
+			min-width: $d-dividerWidth;
+		}
+	}
+
+	@media (max-width: $mq-tiny){
+		.col1,
+		.col2,
+		.col3{
+			display:block;
+			width:100% !important;
+			text-align:center;
+		}
+
+		.learn-td{
+			padding-bottom:10px !important;
+		}
+	}
+
+}
+
+

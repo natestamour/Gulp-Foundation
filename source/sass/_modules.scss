@@ -1,0 +1,73 @@
+
+// ================
+// Module Mixins
+// ================
+// Each section corresponds to a partial in _partials/_modules.
+// Include mixin code into the template you added correpsonding module to. Style here as needed.
+
+// ============================================================
+// Info Table
+// ============================================================
+
+@mixin info-table{
+
+  .info-table{
+  // use border="" and bordercolor="" attribute on info-table to define border because of Outlook.
+
+    .info-table-td{
+      padding-bottom:20px !important;
+    }
+
+    .container{
+      padding:10px 10px 0 !important;
+
+      @media (max-width: $mq-small){
+        padding:5px 5px 0 !important;
+      }
+    }
+
+    .side-title{
+      // color:#0000ff;
+      font-weight:bold;
+      word-break:normal;
+    }
+
+    .top-title,
+    .info-table-spacer {
+      // background: #0000ff;
+      color:white;
+      font-weight:bold;
+      border:0 !important;
+    }
+  }
+}
+
+// ============================================================
+// Module Border 
+// ============================================================
+// Use when you need an extra border between modules. 
+
+@mixin module-border{
+
+  .module-border {
+    hr {
+      border-bottom: none;
+      border-top: solid 1px #dddddd;
+    }
+    .wrapper {
+      width: 610px;
+    }
+
+    @media (max-width: $mq-small) {
+      .wrapper {
+        width: 95% !important;
+      }
+    }
+
+    @media (max-width: $mq-small) {
+      .wrapper {
+        width: 94% !important;
+      }
+    }
+  }
+}
